@@ -47,14 +47,16 @@ Pré-requisitos
 
 2. Instalar Dependências (PHP)
 
-`composer install`
+```
+composer install
+```
 
 3. Configurar o Ambiente
 
 Copie o arquivo de exemplo .env e gere a chave da aplicação:
 
 ```
-cp .env.example .
+cp .env.example .env
 
 php artisan key:generate
 ```
