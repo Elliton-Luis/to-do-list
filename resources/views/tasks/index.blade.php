@@ -47,7 +47,7 @@
                 @forelse ($tasks as $task)
                     <tr class="hover:bg-gray-50 transition-colors duration-150">
                         <td class="p-4 whitespace-nowrap">
-                            <a href="{{ route('tasks.show', $task) }}" class="font-medium text-gray-800 hover:text-indigo-600">
+                            <a href="{{ route('tasks.show', $task) }}" class="font-medium text-indigo-600 hover:text-indigo-800 hover:underline">
                                 {{ $task->title }}
                             </a>
                         </td>
@@ -88,7 +88,7 @@
                     <div class="pb-2">
                         <p class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">Título</p>
                         <a href="{{ route('tasks.show', $task) }}">
-                            <h3 class="text-lg font-bold text-gray-900 hover:text-indigo-600 transition-colors">
+                            <h3 class="text-lg font-bold text-indigo-600 hover:text-indigo-800 hover:underline transition-colors">
                                 {{ $task->title }}
                             </h3>
                         </a>
